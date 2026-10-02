@@ -1,0 +1,15 @@
+configuration:
+  public_url:
+    name: URL pubblico HTTPS
+    description: Es. https://nome-pc.tailnet.ts.net
+  audio_proxy:
+    name: Proxy audio (solo Fonte 2)
+    description: Es. socks5h://IP:1080 per WARP
+  offset_api_url:
+    name: URL API offset ToastFlix
+    description: Sincronizzazione offset con il database centrale
+  cors_origins:
+    name: Origini CORS
+    description: Default *
+network:
+  3107/tcp: Dashboard e API del Sidecar

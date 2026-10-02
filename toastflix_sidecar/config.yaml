@@ -1,0 +1,25 @@
+name: ToastFlix Audio Sidecar
+version: "1.0.0"
+slug: toastflix_sidecar
+description: Sidecar audio italiano (Dual Audio 4K/FHD) per ToastFlix
+url: https://gitlab.com/MLnalis/ha-toastflix-sidecar
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: services
+boot: auto
+ports:
+  3107/tcp: 3169
+ports_description:
+  3107/tcp: Dashboard e API del Sidecar
+options:
+  public_url: ""
+  audio_proxy: ""
+  offset_api_url: ""
+  cors_origins: "*"
+schema:
+  public_url: str?
+  audio_proxy: str?
+  offset_api_url: str?
+  cors_origins: str
